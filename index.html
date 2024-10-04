@@ -22,6 +22,22 @@
     <main>
         <section id="productos">
             <h2>Productos</h2>
+             <div class="producto">
+                <img src="mandil3.jpg" alt="Mandil 3">
+                <h3>Mandil de primavera/verano</h3>
+                <label for="talla1">Selecciona la talla:</label>
+                <select id="talla1" onchange="actualizarPrecio('mandil3', this.value)">
+                    <option value="" disabled selected>Elige una talla</option>
+                    <option value="15">Talla 2 - S/ 15.00</option>
+                    <option value="15">Talla 4 - S/ 15.00</option>
+                    <option value="15">Talla 6 - S/ 15.00</option>
+                    <option value="20">Talla 8 - S/ 20.00</option>
+                    <option value="20">Talla 10 - S/ 20.00</option>
+                    <option value="20">Talla 12 - S/ 20.00</option>
+                </select>
+                <p>Precio: <span id="precio-mandil3">S/ 0.00</span></p>
+                <button onclick="agregarAlCarrito('Mandil de primavera/verano', parseInt(document.getElementById('talla1').value))">Agregar al carrito</button>
+            </div>
             <div class="producto">
                 <img src="mandil2.jpg" alt="Mandil 2">
                 <h3>Mandil Colorido</h3>
