@@ -13,6 +13,14 @@ header {
     border-bottom: 5px solid #ff3e30; /* Un borde de color vibrante */
 }
 
+.logo {
+    width: 120px; /* Ajuste del tamaño del logo */
+    height: 120px; /* Ancho y alto del logo */
+    border-radius: 50%; /* Opcional: convierte el logo en un círculo */
+    display: block;
+    margin: 0 auto 10px auto; /* Centra el logo en el encabezado */
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -53,9 +61,9 @@ main {
 }
 
 .producto img {
-    width: 225px;      /* Ancho fijo de la imagen */
-    height: 225px;     /* Alto fijo de la imagen */
-    object-fit: cover; /* Ajuste para que las imágenes conserven proporciones */
+    width: 250px;      /* Ancho fijo de la imagen */
+    height: 250px;     /* Alto fijo de la imagen */
+    object-fit: cover; /* Recorta la imagen si no tiene proporciones iguales */
     border-radius: 5px; /* Bordes redondeados para las imágenes */
 }
 
