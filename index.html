@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandiles Escolares - Mandilitos Mágicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mandilitos Mágicos</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#redes">Redes Sociales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="producto">
+                <img src="mandil2.jpg" alt="Mandil 2">
+                <h3>Mandil Colorido</h3>
+                <label for="talla1">Selecciona la talla:</label>
+                <select id="talla1" onchange="actualizarPrecio('mandil1', this.value)">
+                    <option value="" disabled selected>Elige una talla</option>
+                    <option value="25">Talla 2 - S/ 25.00</option>
+                    <option value="25">Talla 4 - S/ 25.00</option>
+                    <option value="25">Talla 6 - S/ 25.00</option>
+                    <option value="35">Talla 8 - S/ 35.00</option>
+                    <option value="35">Talla 10 - S/ 35.00</option>
+                    <option value="35">Talla 12 - S/ 35.00</option>
+                </select>
+                <p>Precio: <span id="precio-mandil1">S/ 0.00</span></p>
+                <button onclick="agregarAlCarrito('Mandil Colorido', parseInt(document.getElementById('talla1').value))">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="mandil1.jpg" alt="Mandil 1">
+                <h3>Mandil Personalizado</h3>
+                <label for="talla2">Selecciona la talla:</label>
+                <select id="talla2" onchange="actualizarPrecio('mandil2', this.value)">
+                    <option value="" disabled selected>Elige una talla</option>
+                    <option value="30">Talla 2 - S/ 30.00</option>
+                    <option value="30">Talla 4 - S/ 30.00</option>
+                    <option value="30">Talla 6 - S/ 30.00</option>
+                    <option value="40">Talla 8 - S/ 40.00</option>
+                    <option value="40">Talla 10 - S/ 40.00</option>
+                    <option value="40">Talla 12 - S/ 40.00</option>
+                </select>
+                <p>Precio: <span id="precio-mandil2">S/ 0.00</span></p>
+                <button onclick="agregarAlCarrito('Mandil con Diseño de Animales', parseInt(document.getElementById('talla2').value))">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="redes">
+            <h2>Redes Sociales</h2>
+            <p>Síguenos en nuestras redes sociales:</p>
+            <ul>
+                <li><a href="https://www.instagram.com/mandilitos.magicos.pe/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@mandilitos.magicos.pe?lang=es"_blank">TikTok</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mandilitos Mágicos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

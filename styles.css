@@ -1,0 +1,89 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffae5; /* Fondo suave y claro */
+}
+
+header {
+    background-color: #ff6f61; /* Color vibrante para el encabezado */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ff3e30; /* Un borde de color vibrante */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Texto en negrita */
+}
+
+h1, h2 {
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra de texto para darle un efecto divertido */
+}
+
+main {
+    padding: 20px;
+}
+
+.producto {
+    border: 2px solid #ff3e30; /* Borde vibrante para los productos */
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff3e6; /* Fondo suave para los productos */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.2s; /* Efecto de transición para el hover */
+}
+
+.producto:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ff6f61; /* Color vibrante para el pie de página */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em; /* Texto un poco más pequeño */
+}
+
+#redes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#redes ul li {
+    margin: 5px 0;
+}
+
+#redes a {
+    color: #ff6f61; /* Color vibrante para los enlaces de redes sociales */
+    text-decoration: none;
+    font-weight: bold; /* Texto en negrita */
+}
+
+#redes a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
