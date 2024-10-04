@@ -53,8 +53,9 @@ main {
 }
 
 .producto img {
-    max-width: 100%;
-    height: auto;
+    width: 225px;      /* Ancho fijo de la imagen */
+    height: 225px;     /* Alto fijo de la imagen */
+    object-fit: cover; /* Ajuste para que las imágenes conserven proporciones */
     border-radius: 5px; /* Bordes redondeados para las imágenes */
 }
 
